@@ -25,47 +25,44 @@ Bu proje, **derin öğrenme tabanlı görüntü inpainting** (eksik bölge doldu
 ## **Kurulum Adımları**
 
 1. **Projeyi Klonlayın:**
-   ```bash
-   git clone https://github.com/1ahmetbb/IMAGE-INPAINTING-DFNET.git
-   cd DFNet-ImageInpainting
+	```bash
+ 	git clone https://github.com/1ahmetbb/IMAGE-INPAINTING-DFNET.git
+ 	cd DFNet-ImageInpainting
 
 2. **Gerekli Kütüphaneleri Kurun:**
-    ```bash
-    pip install -r requirements.txt
+	```bash
+ 	pip install -r requirements.txt
 
 3. **Veri Setini Hazırlayın:**
 	•	Orijinal resimlerinizi bir klasöre koyun. Örneğin: data/original_images.
 	•	Maskelenmiş resimleri oluşturmak için mask_and_save_images fonksiyonunu kullanın.
 
 4. **Modeli Eğitin:**
-    ```bash
-    python train.py
-
+	```bash
+ 	python train.py
+    
     •	Eğitilmiş model ağırlıkları trained_dfnet.pth dosyasına kaydedilecektir.
 
 5. **Modeli Test Edin:**
-    ```bash
-    python test.py
+	```bash
+ 	python test.py
 
 ## PROJE KULLANIMI
 
 1. **Egitim:**
 	•	Orijinal ve maskelenmiş resimlerden oluşan bir veri kümesiyle modeli eğitin.
-
 2. **Test:**
 	•	Maskelenmiş bir görüntü ile modelin dolgu yeteneğini test edin.
-
 ## Gereksinimler
 Projede kullanılan temel kütüphaneler:
-	•	torch >= 1.12.0
-	•	torchvision >= 0.13.0
-	•	opencv-python
-	•	matplotlib
-	•	numpy
-
+•	torch >= 1.12.0
+•	torchvision >= 0.13.0
+•	opencv-python
+•	matplotlib
+•	numpy
 Bu kütüphaneleri kurmak için:
-    ```bash
-    pip install -r requirements.txt
+	```bash
+	pip install -r requirements.txt
 
 ## Egitilmis Model Agirliklari
 Eğitilmiş model ağırlıklarını checkpoints/trained_dfnet.pth dosyasından yükleyebilirsiniz. Bu dosya, eğitilmiş DFNet modelini içerir ve yeniden eğitim gerektirmez.
