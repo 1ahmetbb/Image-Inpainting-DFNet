@@ -54,15 +54,20 @@ Bu proje, **derin öğrenme tabanlı görüntü inpainting** (eksik bölge doldu
 2. **Test:**
 	•	Maskelenmiş bir görüntü ile modelin dolgu yeteneğini test edin.
 ## Gereksinimler
-Projede kullanılan temel kütüphaneler:
-•	torch >= 1.12.0
-•	torchvision >= 0.13.0
-•	opencv-python
-•	matplotlib
-•	numpy
+
+Projede kullanilan temek kutuphaneler:
+
+	•torch => 1.12.0
+ 	•torchvision => 0.13.0
+  	•opencv-python
+   	•matplptlib
+    	•numpy
+     
 Bu kütüphaneleri kurmak için:
+
 	```bash
-	pip install -r requirements.txt
+ 	pip install -r requirements.txt
+
 
 ## Egitilmis Model Agirliklari
 Eğitilmiş model ağırlıklarını checkpoints/trained_dfnet.pth dosyasından yükleyebilirsiniz. Bu dosya, eğitilmiş DFNet modelini içerir ve yeniden eğitim gerektirmez.
